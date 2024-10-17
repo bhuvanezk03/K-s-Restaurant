@@ -1,0 +1,57 @@
+/* Styles for floating image gallery */
+.image-gallery {
+    overflow: hidden; /* Clearfix for floated items */
+}
+
+.image-item {
+    float: left;
+    width: 24%; /* Adjust based on number of items and spacing */
+    margin: 1%; /* Adjust margin as needed */
+    text-align: center;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-title {
+    margin-top: 0.5rem;
+}
+
+/* Clear floats after the last item */
+.image-gallery::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Navigation Bar Styles */
+.navbar-custom {
+    background-color: black; /* Background color */
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: white; /* Text color */
+}
+
+/* Navbar link hover effects */
+.navbar-custom .nav-link:hover {
+    background-color: #333; /* Mild black for hover effect */
+    color: white; /* Ensure text color remains white on hover */
+}
+
+/* Increase spacing between nav items */
+.navbar-nav .nav-item {
+    margin-right: 20px; /* Adjust spacing as needed */
+}
+
+/* Ensure the last item does not have extra spacing */
+.navbar-nav .nav-item:last-child {
+    margin-right: 0;
+}
+h4{
+   text-align: center;
+   text-size-adjust: 20px;
+}
